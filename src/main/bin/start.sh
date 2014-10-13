@@ -2,7 +2,7 @@
 
 BASE_DIR=`dirname $0`
 
-echo "[`date`] 尝试启动数据同步任务..."
+echo "[`date`] 尝试启动任务..."
 if [ -x /usr/bin/flock ]; then
     EXEC="/usr/bin/flock -xw 0 $BASE_DIR/main.lock"
 fi
